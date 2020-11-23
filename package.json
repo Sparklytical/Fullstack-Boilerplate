@@ -1,0 +1,30 @@
+{
+  "name": "infinity-fullstack-boilerplate",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.0",
+    "lerna": "^3.22.1",
+    "standard-version": "^9.0.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "author": "Sparklytical <sparklytical@pm.me>",
+  "hooks": {
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  },
+  "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "description": "Full Stack Boilerplate",
+  "scripts": {
+    "release": "standard-version"
+  }
+}
