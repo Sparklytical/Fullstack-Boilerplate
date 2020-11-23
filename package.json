@@ -6,7 +6,8 @@
     "@commitlint/config-conventional": "^11.0.0",
     "husky": "^4.3.0",
     "lerna": "^3.22.1",
-    "standard-version": "^9.0.0"
+    "release-it": "^14.2.1",
+    "release-it-lerna-changelog": "^3.1.0"
   },
   "workspaces": {
     "packages": [
@@ -25,6 +26,10 @@
   },
   "description": "Full Stack Boilerplate",
   "scripts": {
-    "release": "lerna version"
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sparklytical/Fullstack-Boilerplate.git"
   }
 }
