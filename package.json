@@ -25,6 +25,6 @@
   },
   "description": "Full Stack Boilerplate",
   "scripts": {
-    "release": "standard-version"
+    "release": "lerna version"
   }
 }
