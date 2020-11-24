@@ -1,0 +1,23 @@
+{
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "typescript"],
+  "search.exclude": {
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/node_modules": true
+  },
+  "typescript.referencesCodeLens.enabled": true
+}

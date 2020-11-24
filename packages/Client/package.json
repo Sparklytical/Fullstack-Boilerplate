@@ -1,0 +1,73 @@
+{
+  "author": "Sparklytical <sparklytical@pm.me>",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "dependencies": {
+    "@apollo/client": "^3.2.7",
+    "@chakra-ui/react": "^1.0.1",
+    "@emotion/react": "11.1.1",
+    "@emotion/styled": "11.0.0",
+    "@graphql-codegen/cli": "^1.19.2",
+    "@graphql-codegen/typescript": "^1.17.11",
+    "@graphql-codegen/typescript-apollo-client-helpers": "^1.1.0",
+    "@graphql-codegen/typescript-operations": "^1.17.10",
+    "@graphql-codegen/typescript-react-apollo": "^2.1.1",
+    "formik": "^2.2.5",
+    "framer-motion": "^2.9.4",
+    "graphql": "^15.4.0",
+    "graphql-codegen-apollo-next-ssr": "^1.1.0",
+    "next": "latest",
+    "next-apollo": "^5.0.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^3.11.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@next/bundle-analyzer": "^10.0.3",
+    "@types/node": "^14.14.9",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.14.0",
+    "eslint-config-galex": "^2.7.9",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
+    "prettier": "^2.2.0",
+    "standard-version": "^9.0.0",
+    "typescript": "4.1.2"
+  },
+  "hooks": {
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "pre-commit": "lint-staged"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,tsx,ts,tsx,css,scss}": [
+      "eslint --fix"
+    ],
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write"
+  },
+  "name": "client",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sparklytical/Fullstack-Boilerplate.git"
+  },
+  "scripts": {
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "build": "next build",
+    "dev": "next",
+    "gen": "graphql-codegen --config codegen.yml",
+    "lint:code": "eslint src",
+    "lint:code:fix": "eslint src --fix && prettier --write src",
+    "release": "standard-version",
+    "start": "next start"
+  },
+  "version": "0.0.2"
+}

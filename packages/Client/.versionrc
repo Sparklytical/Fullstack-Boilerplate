@@ -1,0 +1,15 @@
+{
+  "types": [
+    {"type":"feat","section":"✨ Features"},
+    {"type":"fix","section":"🐛 Bug Fixes"},
+    {"type":"test","section":"Tests", "hidden": true},
+    {"type":"build","section":"Build System", "hidden": true},
+    {"type":"ci","hidden":true},
+    {"type": "chore", "hidden": true},
+    {"type": "docs", "section": "📝 Documentation"},
+    {"type": "style", "section": "💄 UI"},
+    {"type": "refactor", "section": "♻️ Refactors"},
+    {"type": "perf", "section": "⚡️ Performance Fixes"},
+    {"type": "security", "section": "🔒 Security Updates"}
+  ]
+}
