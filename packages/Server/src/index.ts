@@ -77,6 +77,11 @@ const main = async () => {
       res,
     }),
     schema: await buildSchema({
+      emitSchemaFile: {
+        commentDescriptions: true,
+        path: `${__dirname  }/generated/schema.gql`,
+        // by default the printed schema is sorted alphabetically
+      },
       resolvers: [
       GetUser,AddUser
       ],

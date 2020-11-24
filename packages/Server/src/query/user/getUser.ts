@@ -1,5 +1,4 @@
-import { Arg, Int, Query, Resolver } from 'type-graphql';
-import { getConnection } from 'typeorm';
+import { Arg, Query, Resolver } from 'type-graphql';
 
 import { User } from '../../entities/User';
 import {  UserIdInput } from "../../types/user/UserIdInput";

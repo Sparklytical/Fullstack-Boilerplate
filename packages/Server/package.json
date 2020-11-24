@@ -26,6 +26,10 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@graphql-codegen/cli": "^1.19.2",
+    "@graphql-codegen/typed-document-node": "^1.17.10",
+    "@graphql-codegen/typescript": "^1.17.11",
+    "@graphql-codegen/typescript-resolvers": "^1.17.11",
     "@types/cheerio": "^0.22.22",
     "@types/connect-redis": "^0.0.15",
     "@types/express": "^4.17.9",
@@ -71,6 +75,7 @@
     "build": "tsc",
     "dev": "ts-node-dev --respawn src/index",
     "format": "prettier src/*.ts --write",
+    "gen": "graphql-codegen",
     "lint": "eslint src/*.ts",
     "lint:fix": "eslint src/*.ts --fix",
     "start": "ts-node src/index.ts",
