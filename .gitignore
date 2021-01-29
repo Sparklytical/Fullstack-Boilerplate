@@ -16,7 +16,7 @@ packages/*/dist
 tooling/*/dist
 packages/*/node_modules
 npm-debug.log*
-packages/*/.env
+
 *.log
 *.cache
 yarn-error.log
@@ -88,9 +88,6 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variables file
-.env
-.env.*
 
 # Mac files
 .DS_Store

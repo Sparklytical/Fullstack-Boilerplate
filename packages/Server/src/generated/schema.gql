@@ -26,13 +26,13 @@ input UserIdInput {
   id: Float!
 }
 
+type UserResponse {
+  errors: [UserError!]
+  user: User
+}
+
 input UsernamePasswordInput {
   email: String!
   password: String!
   username: String!
-}
-
-type UserResponse {
-  errors: [UserError!]
-  user: User
 }

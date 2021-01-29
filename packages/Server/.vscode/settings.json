@@ -20,5 +20,8 @@
     "**/dist": true,
     "**/coverage": true
   },
-  "typescript.referencesCodeLens.enabled": true
+  "typescript.referencesCodeLens.enabled": true,
+  "conventionalCommits.scopes": [
+    "dependencies"
+  ]
 }
